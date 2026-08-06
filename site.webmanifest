@@ -1,0 +1,14 @@
+{
+  "name": "UFO MAGIC — Secret Archive",
+  "short_name": "UFO MAGIC",
+  "description": "The truth is hidden.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#030405",
+  "theme_color": "#030405",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {"src": "./assets/icons/eye.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}

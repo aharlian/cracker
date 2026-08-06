@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fa" dir="rtl" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#050607" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="UFO MAGIC — آرشیو محرمانه‌ای از کتاب‌های کلکسیونی، اسناد رمزگذاری‌شده و مصنوعات محدود. حقیقت پنهان است." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="UFO MAGIC — THE TRUTH IS HIDDEN" />
+    <meta property="og:description" content="Enter the classified archive. Books, relics and restricted knowledge." />
+    <meta property="og:image" content="./assets/images/og-cover.webp" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>UFO MAGIC — THE TRUTH IS HIDDEN</title>
+
+    <link rel="icon" href="./assets/icons/eye.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="./assets/models/ufo-magic-ark.glb" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="./assets/images/book-occult.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Brand",
+        "name": "UFO MAGIC",
+        "slogan": "THE TRUTH IS HIDDEN",
+        "description": "A cinematic classified archive for limited-edition books and collectible relics."
+      }
+    </script>
+  </head>
+  <body>
+    <script>document.documentElement.classList.replace('no-js','js');</script>
+
+    <a class="skip-link" href="#main-content">پرش به محتوای اصلی</a>
+
+    <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="در حال ورود به آرشیو محرمانه">
+      <video class="preloader__noise" autoplay muted loop playsinline aria-hidden="true">
+        <source src="./assets/videos/crt-noise.mp4" type="video/mp4" />
+      </video>
+      <div class="preloader__scan" aria-hidden="true"></div>
+      <div class="preloader__frame" aria-hidden="true"></div>
+      <div class="preloader__content" dir="ltr">
+        <div class="preloader__sigil" aria-hidden="true">
+          <span></span><i></i><b></b>
+        </div>
+        <p class="preloader__label">UFO MAGIC / SECURE TERMINAL</p>
+        <div class="preloader__terminal" id="preloader-terminal"></div>
+        <div class="preloader__progress" aria-hidden="true">
+          <span id="preloader-bar"></span>
+        </div>
+        <div class="preloader__meta">
+          <span>NODE: IR-09</span>
+          <strong id="preloader-percent">000%</strong>
+          <span>ENCRYPTION: ACTIVE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-shell" id="site-shell">
+      <header class="site-header" id="site-header">
+        <a class="brand" href="#hero" aria-label="UFO MAGIC - صفحه اصلی">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M4 24s7-11 20-11 20 11 20 11-7 11-20 11S4 24 4 24Z"/><circle cx="24" cy="24" r="5"/><circle cx="24" cy="24" r="1.3" class="brand__dot"/></svg>
+          </span>
+          <span class="brand__type" dir="ltr">UFO MAGIC<small>SECRET ARCHIVE</small></span>
+        </a>
+
+        <nav class="main-nav" aria-label="ناوبری اصلی">
+          <a href="#books" data-nav>کتاب‌ها</a>
+          <a href="#relics" data-nav>مصنوعات</a>
+          <a href="#archive" data-nav>آرشیو</a>
+          <a href="#timeline" data-nav>تایم‌لاین</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button sound-toggle" id="sound-toggle" type="button" aria-label="فعال‌کردن صدای محیط" aria-pressed="false">
+            <span class="sound-toggle__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="بازکردن منو" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__grid"></div>
+        <nav aria-label="منوی موبایل">
+          <a href="#books"><span>01</span>کتاب‌های ممنوعه</a>
+          <a href="#relics"><span>02</span>مصنوعات محدود</a>
+          <a href="#archive"><span>03</span>پرونده‌های محرمانه</a>
+          <a href="#timeline"><span>04</span>خط زمانی</a>
+        </nav>
+        <p dir="ltr">CLEARANCE LEVEL / OBSIDIAN</p>
+      </div>
+
+      <main id="main-content">
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+          <div class="hero__webgl" id="hero-webgl" aria-hidden="true"></div>
+          <div class="hero__fallback" aria-hidden="true"></div>
+          <div class="hero__grain" aria-hidden="true"></div>
+          <div class="hero__mouse-glow" id="mouse-glow" aria-hidden="true"></div>
+          <div class="hero__hud hero__hud--top" aria-hidden="true"><span>ARCHIVE NODE 09</span><span>ACCESS: RESTRICTED</span></div>
+          <div class="hero__hud hero__hud--side" aria-hidden="true"><span>LAT 29.5918</span><span>LON 52.5837</span><span>SIGNAL 88.4</span></div>
+
+          <div class="hero__content container">
+            <div class="hero__eyebrow reveal-text" dir="ltr">
+              <span>CLASSIFIED COLLECTION / 2026</span>
+            </div>
+            <h1 class="hero__title" id="hero-title" dir="ltr" aria-label="UFO MAGIC, The truth is hidden">
+              <span class="hero__title-main" data-split>UFO MAGIC</span>
+              <span class="hero__title-sub">THE TRUTH IS HIDDEN</span>
+            </h1>
+            <div class="hero__intro reveal-copy">
+              <p>این‌جا فروشگاه نیست؛ نقطه ورود به آرشیوی است که برای همه ساخته نشده.</p>
+              <span>سطح دسترسی شما موقتاً تأیید شد.</span>
+            </div>
+            <div class="hero__actions reveal-actions">
+              <a class="button button--primary magnetic" href="#books"><span>ورود به مجموعه</span><i aria-hidden="true">↙</i></a>
+              <a class="button button--ghost magnetic" href="#archive"><span>مشاهده پرونده‌ها</span><i aria-hidden="true">—</i></a>
+            </div>
+          </div>
+
+          <div class="hero__status" aria-hidden="true">
+            <div><span>OBJECT</span><strong>ARK–09</strong></div>
+            <div><span>ALTITUDE</span><strong>12,840 M</strong></div>
+            <div><span>PROTOCOL</span><strong>SILENCE</strong></div>
+          </div>
+
+          <a class="scroll-cue" href="#manifesto" aria-label="اسکرول به بخش بعدی">
+            <span>SCROLL TO DESCEND</span><i></i>
+          </a>
+        </section>
+
+        <div class="signal-band" aria-hidden="true" dir="ltr">
+          <div class="signal-band__track">
+            <span>AUTHENTIC OBJECTS</span><i>✦</i><span>RESTRICTED KNOWLEDGE</span><i>✦</i><span>LIMITED EDITIONS</span><i>✦</i><span>THE TRUTH IS HIDDEN</span><i>✦</i>
+            <span>AUTHENTIC OBJECTS</span><i>✦</i><span>RESTRICTED KNOWLEDGE</span><i>✦</i><span>LIMITED EDITIONS</span><i>✦</i><span>THE TRUTH IS HIDDEN</span><i>✦</i>
+          </div>
+        </div>
+
+        <section class="manifesto section" id="manifesto">
+          <div class="container manifesto__grid">
+            <div class="section-index" aria-hidden="true"><span>01</span><i></i><b>MANIFESTO</b></div>
+            <div class="manifesto__copy">
+              <p class="kicker reveal-text" dir="ltr">AN ARCHIVE BEYOND THE VISIBLE</p>
+              <h2 class="section-title" data-split-fa>هر حقیقتی برای دیده‌شدن ساخته نشده است.</h2>
+              <p class="manifesto__lead reveal-copy">UFO MAGIC مرز میان کتاب، شیء کلکسیونی و سند محرمانه را از بین می‌برد. هر اثر بخشی از یک روایت بزرگ‌تر است؛ روایتی درباره نمادها، تمدن‌ها، قدرت و چیزهایی که در حاشیه تاریخ باقی مانده‌اند.</p>
+            </div>
+            <aside class="manifesto__seal reveal-scale" aria-label="مهر سطح دسترسی">
+              <div class="seal">
+                <span dir="ltr">UFO MAGIC • AUTHORIZED EYES ONLY •</span>
+                <div><b>09</b><small>OBSIDIAN<br/>CLEARANCE</small></div>
+              </div>
+            </aside>
+          </div>
+          <div class="manifesto__coordinates" aria-hidden="true" dir="ltr">29°35'30.5"N / 52°35'01.3"E / SIGNAL LOCKED</div>
+        </section>
+
+        <section class="books section" id="books" aria-labelledby="books-title">
+          <div class="container section-heading">
+            <div class="section-index" aria-hidden="true"><span>02</span><i></i><b>FORBIDDEN VOLUMES</b></div>
+            <div>
+              <p class="kicker reveal-text" dir="ltr">THE PRIVATE LIBRARY</p>
+              <h2 class="section-title" id="books-title" data-split-fa>کتاب‌هایی برای خواندن نیستند؛ برای کشف‌کردن‌اند.</h2>
+            </div>
+            <p class="section-note reveal-copy">نسخه‌های محدود با طراحی کلکسیونی، جزئیات چاپ ممتاز و بسته‌بندی اختصاصی آرشیو.</p>
+          </div>
+
+          <div class="book-stage container-wide" data-book-stage>
+            <article class="book-card is-active" data-book-card>
+              <div class="book-card__visual tilt-surface">
+                <div class="book-object">
+                  <div class="book-object__cover"><img src="./assets/images/book-occult.webp" alt="جلد کتاب مضامین شیطان" width="1200" height="1600" /></div>
+                  <div class="book-object__spine"><span dir="ltr">UFO MAGIC / IX-303</span></div>
+                  <div class="book-object__pages"></div>
+                </div>
+                <div class="book-card__reflection" aria-hidden="true"></div>
+              </div>
+              <div class="book-card__info">
+                <span class="book-card__code" dir="ltr">ARCHIVE IX–303</span>
+                <h3>مضامین شیطان</h3>
+                <p>کاوشی تصویری و روایی در نمادها، روایت‌های پنهان و معماری تاریک قدرت.</p>
+                <div class="book-card__meta"><span>چاپ کلکسیونی</span><span>نسخه محدود</span><span>هاردباکس اختصاصی</span></div>
+                <a class="text-link magnetic" href="#access"><span>درخواست دسترسی</span><i>↙</i></a>
+              </div>
+            </article>
+
+            <article class="book-card" data-book-card>
+              <div class="book-card__visual tilt-surface">
+                <div class="book-object">
+                  <div class="book-object__cover"><img src="./assets/images/book-black-code.webp" alt="جلد کتاب رمز سیاه" width="1200" height="1600" loading="lazy" /></div>
+                  <div class="book-object__spine"><span dir="ltr">UFO MAGIC / VII-119</span></div>
+                  <div class="book-object__pages"></div>
+                </div>
+                <div class="book-card__reflection" aria-hidden="true"></div>
+              </div>
+              <div class="book-card__info">
+                <span class="book-card__code" dir="ltr">ARCHIVE VII–119</span>
+                <h3>رمز سیاه</h3>
+                <p>پرونده‌ای درباره زبان رمز، هندسه آیینی و الگوهایی که قرن‌ها تکرار شده‌اند.</p>
+                <div class="book-card__meta"><span>کاغذ پریمیوم</span><span>طلاکوب محدود</span><span>شماره‌گذاری دستی</span></div>
+                <a class="text-link magnetic" href="#access"><span>درخواست دسترسی</span><i>↙</i></a>
+              </div>
+            </article>
+
+            <article class="book-card" data-book-card>
+              <div class="book-card__visual tilt-surface">
+                <div class="book-object">
+                  <div class="book-object__cover"><img src="./assets/images/book-archive51.webp" alt="جلد کتاب آرشیو ۵۱" width="1200" height="1600" loading="lazy" /></div>
+                  <div class="book-object__spine"><span dir="ltr">UFO MAGIC / V-051</span></div>
+                  <div class="book-object__pages"></div>
+                </div>
+                <div class="book-card__reflection" aria-hidden="true"></div>
+              </div>
+              <div class="book-card__info">
+                <span class="book-card__code" dir="ltr">ARCHIVE V–051</span>
+                <h3>آرشیو ۵۱</h3>
+                <p>بازسازی اسناد، گزارش‌ها و روایت‌های متناقض پیرامون ناشناخته‌ترین پرونده قرن.</p>
+                <div class="book-card__meta"><span>فول‌کالر</span><span>اسناد بازطراحی‌شده</span><span>پاکت محرمانه</span></div>
+                <a class="text-link magnetic" href="#access"><span>درخواست دسترسی</span><i>↙</i></a>
+              </div>
+            </article>
+
+            <div class="book-stage__controls" aria-label="کنترل نمایش کتاب‌ها">
+              <button type="button" data-book-prev aria-label="کتاب قبلی">←</button>
+              <div class="book-stage__progress"><span></span></div>
+              <button type="button" data-book-next aria-label="کتاب بعدی">→</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="relics section" id="relics" aria-labelledby="relics-title">
+          <div class="container section-heading section-heading--split">
+            <div class="section-index" aria-hidden="true"><span>03</span><i></i><b>RELIC CHAMBER</b></div>
+            <div>
+              <p class="kicker reveal-text" dir="ltr">OBJECTS WITH A MEMORY</p>
+              <h2 class="section-title" id="relics-title" data-split-fa>ویترینی برای اشیایی که فقط ساخته نشده‌اند؛ ثبت شده‌اند.</h2>
+            </div>
+          </div>
+
+          <div class="museum container-wide">
+            <article class="museum-item" data-relic>
+              <div class="museum-item__image tilt-surface">
+                <img src="./assets/images/relic-medallion.webp" alt="مدالیون ابسیدین UFO MAGIC" width="1100" height="900" loading="lazy" />
+                <span class="museum-item__light" aria-hidden="true"></span>
+              </div>
+              <div class="museum-item__caption"><span dir="ltr">OBJECT 01 / OBSIDIAN</span><h3>مدالیون ابسیدین</h3><p>آلیاژ برنز تیره، پرداخت دستی و حکاکی شماره آرشیو.</p></div>
+            </article>
+            <article class="museum-item" data-relic>
+              <div class="museum-item__image tilt-surface">
+                <img src="./assets/images/relic-key.webp" alt="کلید آرشیو برنزی UFO MAGIC" width="1100" height="900" loading="lazy" />
+                <span class="museum-item__light" aria-hidden="true"></span>
+              </div>
+              <div class="museum-item__caption"><span dir="ltr">OBJECT 02 / BRASS</span><h3>کلید آرشیو</h3><p>قطعه‌ای نمادین برای نسخه‌های ویژه و پرونده‌های مهروموم‌شده.</p></div>
+            </article>
+            <article class="museum-item" data-relic>
+              <div class="museum-item__image tilt-surface">
+                <img src="./assets/images/relic-dossier.webp" alt="دوسیه چرمی کلکسیونی UFO MAGIC" width="1100" height="900" loading="lazy" />
+                <span class="museum-item__light" aria-hidden="true"></span>
+              </div>
+              <div class="museum-item__caption"><span dir="ltr">OBJECT 03 / LEATHER</span><h3>دوسیه مأمور</h3><p>چرم تیره، نشان برنجی و فضای اختصاصی نگهداری اسناد.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="archive section" id="archive" aria-labelledby="archive-title">
+          <div class="archive__backdrop" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="container section-heading section-heading--split">
+            <div class="section-index" aria-hidden="true"><span>04</span><i></i><b>CLASSIFIED FILES</b></div>
+            <div>
+              <p class="kicker reveal-text" dir="ltr">AUTHORIZED EYES ONLY</p>
+              <h2 class="section-title" id="archive-title" data-split-fa>بخشی از اطلاعات فقط هنگام نزدیک‌شدن آشکار می‌شود.</h2>
+            </div>
+            <p class="section-note reveal-copy">برای مشاهده لایه پنهان، نشانگر را روی پرونده نگه دارید یا با صفحه‌کلید روی آن فوکوس کنید.</p>
+          </div>
+
+          <div class="archive-grid container">
+            <article class="file-card" tabindex="0" data-file>
+              <div class="file-card__top"><span dir="ltr">FILE: AURORA–12</span><strong>TOP SECRET</strong></div>
+              <div class="file-card__stamp">TOP<br/>SECRET</div>
+              <h3 dir="ltr">PROJECT AURORA</h3>
+              <p class="redacted">گزارش ثبت یک <i></i> در ارتفاع <i class="long"></i> و قطع هم‌زمان تمام سیگنال‌های محلی.</p>
+              <div class="file-card__reveal"><span>REVEALED FRAGMENT</span><p>سه شیء بدون امضای حرارتی، با آرایشی هندسی و سکوت کامل راداری مشاهده شدند.</p></div>
+              <footer><span>STATUS: ACTIVE</span><span>04 / 1979</span></footer>
+            </article>
+
+            <article class="file-card file-card--dark" tabindex="0" data-file>
+              <div class="file-card__top"><span dir="ltr">FILE: BABYLON–08</span><strong>CONFIDENTIAL</strong></div>
+              <div class="file-card__stamp">CONFIDENTIAL</div>
+              <h3 dir="ltr">THE EIGHTH TABLET</h3>
+              <p class="redacted">لوحی که در فهرست رسمی حفاری وجود ندارد و بخشی از <i class="long"></i> را شرح می‌دهد.</p>
+              <div class="file-card__reveal"><span>REVEALED FRAGMENT</span><p>نماد مرکزی با نقشه‌ای ستاره‌ای هم‌پوشانی دارد که هزاران سال بعد ثبت شده است.</p></div>
+              <footer><span>STATUS: SEALED</span><span>11 / 1924</span></footer>
+            </article>
+
+            <article class="file-card" tabindex="0" data-file>
+              <div class="file-card__top"><span dir="ltr">FILE: ROSWELL–51</span><strong>TOP SECRET</strong></div>
+              <div class="file-card__stamp">TOP<br/>SECRET</div>
+              <h3 dir="ltr">INCIDENT 07/47</h3>
+              <p class="redacted">نسخه تطبیقی گزارش‌های شاهدان با حذف کامل نام‌ها، مختصات و <i></i> اصلی.</p>
+              <div class="file-card__reveal"><span>REVEALED FRAGMENT</span><p>تفاوت روایت‌های رسمی دقیقاً از ساعت ۲۳:۱۷ آغاز می‌شود؛ لحظه‌ای که پرونده طبقه‌بندی شد.</p></div>
+              <footer><span>STATUS: REOPENED</span><span>07 / 1947</span></footer>
+            </article>
+          </div>
+        </section>
+
+        <section class="timeline section" id="timeline" aria-labelledby="timeline-title">
+          <div class="container section-heading section-heading--split timeline__heading">
+            <div class="section-index" aria-hidden="true"><span>05</span><i></i><b>THE HIDDEN LINE</b></div>
+            <div>
+              <p class="kicker reveal-text" dir="ltr">A CHRONOLOGY OF SIGNALS</p>
+              <h2 class="section-title" id="timeline-title" data-split-fa>هزاران سال، یک الگو.</h2>
+            </div>
+            <p class="section-note reveal-copy">برای حرکت در خط زمانی اسکرول کنید. هر نقطه بخشی از یک روایت پیوسته است.</p>
+          </div>
+
+          <div class="timeline-track" data-timeline-track dir="ltr">
+            <div class="timeline-line" aria-hidden="true"><span></span></div>
+            <article class="era-card" data-era><span class="era-card__year">3100 BCE</span><b>01</b><h3>ANCIENT EGYPT</h3><p dir="rtl">هم‌زمانی معماری آیینی، ستاره‌شناسی و نماد چشم در ساختار قدرت.</p><i></i></article>
+            <article class="era-card" data-era><span class="era-card__year">1800 BCE</span><b>02</b><h3>BABYLON</h3><p dir="rtl">لوح‌های آسمانی، خدایان فرودآمده و نخستین تقویم‌های دقیق.</p><i></i></article>
+            <article class="era-card" data-era><span class="era-card__year">1119</span><b>03</b><h3>THE TEMPLARS</h3><p dir="rtl">شبکه‌ای از دانش، ثروت و اسنادی که پس از انحلال ناپدید شدند.</p><i></i></article>
+            <article class="era-card" data-era><span class="era-card__year">1492</span><b>04</b><h3>RENAISSANCE</h3><p dir="rtl">بازگشت هندسه مقدس، رمزنگاری تصویری و انجمن‌های بسته.</p><i></i></article>
+            <article class="era-card" data-era><span class="era-card__year">1947</span><b>05</b><h3>ROSWELL</h3><p dir="rtl">حادثه‌ای که زبان مدرن پدیده‌های ناشناس را برای همیشه تغییر داد.</p><i></i></article>
+            <article class="era-card" data-era><span class="era-card__year">1955</span><b>06</b><h3>AREA 51</h3><p dir="rtl">منطقه‌ای خارج از نقشه عمومی؛ محل تلاقی فناوری و شایعه.</p><i></i></article>
+            <article class="era-card" data-era><span class="era-card__year">2026</span><b>07</b><h3>THE ARCHIVE</h3><p dir="rtl">اطلاعات دیگر پنهان نیست؛ فقط میان حقیقت و نویز دفن شده است.</p><i></i></article>
+          </div>
+        </section>
+
+        <section class="access section" id="access" aria-labelledby="access-title">
+          <div class="access__rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="access__beam" aria-hidden="true"></div>
+          <div class="container access__content">
+            <span class="access__code" dir="ltr">REQUEST PROTOCOL / 09</span>
+            <h2 id="access-title" dir="ltr">THE ARCHIVE<br/><em>REMEMBERS.</em></h2>
+            <p>برای دریافت موجودی نسخه‌های محدود، زمان انتشار پرونده‌های جدید و دسترسی به سفارش اختصاصی، وارد پروتکل شوید.</p>
+            <form class="access-form" id="access-form" novalidate>
+              <label for="agent-contact">شماره تماس یا ایمیل</label>
+              <div class="access-form__row">
+                <input id="agent-contact" name="contact" type="text" inputmode="email" autocomplete="email" placeholder="AGENT CONTACT" required aria-describedby="form-status" />
+                <button class="magnetic" type="submit"><span>REQUEST ACCESS</span><i>↙</i></button>
+              </div>
+              <p id="form-status" role="status" aria-live="polite">اطلاعات شما فقط برای پیام‌های آرشیو استفاده می‌شود.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container site-footer__grid">
+          <div class="site-footer__brand"><span dir="ltr">UFO MAGIC</span><p>حقیقت همیشه پنهان نیست؛ گاهی فقط نیاز به سطح دسترسی بالاتری دارد.</p></div>
+          <div><span>ARCHIVE</span><a href="#books">کتاب‌ها</a><a href="#relics">مصنوعات</a><a href="#archive">پرونده‌ها</a></div>
+          <div><span>PROTOCOL</span><a href="#access">درخواست دسترسی</a><a href="#manifesto">درباره آرشیو</a><a href="#hero">بازگشت به بالا</a></div>
+          <div class="site-footer__status" dir="ltr"><span>SYSTEM STATUS</span><b><i></i> ONLINE</b><small>NODE 09 / ENCRYPTED</small></div>
+        </div>
+        <div class="container site-footer__bottom" dir="ltr"><span>© 2026 UFO MAGIC. ALL RECORDS CLASSIFIED.</span><span>THE TRUTH IS HIDDEN</span></div>
+      </footer>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true"><span></span><i></i></div>
+    <audio id="ambient-audio" preload="none" loop>
+      <source src="./assets/audio/archive-ambience.ogg" type="audio/ogg; codecs=opus" />
+      <source src="./assets/audio/archive-ambience.wav" type="audio/wav" />
+    </audio>
+    <noscript><style>.preloader{display:none!important}.site-shell{opacity:1!important}.hero__webgl{display:none}</style></noscript>
+    <script>
+      window.__ufoSafetyTimeout = setTimeout(() => {
+        document.querySelector('#preloader')?.remove();
+        const shell = document.querySelector('#site-shell');
+        if (shell) shell.style.opacity = '1';
+      }, 12000);
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/",
+          "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/index.js",
+          "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/ScrollTrigger.js",
+          "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.mjs"
+        }
+      }
+    </script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
